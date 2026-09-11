@@ -5,6 +5,7 @@ metadata:
   name: wordpress
   annotations:
     service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"
+    #change the ids to the subnet ids of your VPC, tagging was not working for me, so i hardcoded the subnet ids of my VPC
     service.beta.kubernetes.io/aws-load-balancer-subnets: "subnet-0208dadb6a312e9bc, subnet-00a8dde6aa8716f31"
 spec:
   type: LoadBalancer 
