@@ -3,6 +3,9 @@ apiVersion: v1
 kind: Service
 metadata:
   name: wordpress
+  annotations:
+    service.beta.kubernetes.io/aws-load-balancer-scheme: "internet-facing"
+    service.beta.kubernetes.io/aws-load-balancer-subnets: "subnet-0208dadb6a312e9bc, subnet-00a8dde6aa8716f31"
 spec:
   type: LoadBalancer 
   loadBalancerClass: eks.amazonaws.com/nlb
