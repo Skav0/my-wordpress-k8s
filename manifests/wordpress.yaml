@@ -19,7 +19,7 @@ metadata:
 spec:
   selector:
     matchLabels:
-      app: wordpress
+      app: wordpress:latest
       tier: frontend
   strategy:
     type: Recreate
