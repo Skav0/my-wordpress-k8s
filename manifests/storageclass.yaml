@@ -3,7 +3,6 @@ kind: StorageClass
 metadata:
   name: ebs-gp3-sc
   annotations:
-    # Set this as the default StorageClass for the cluster
     storageclass.kubernetes.io/is-default-class: "true"
 provisioner: ebs.csi.eks.amazonaws.com
 volumeBindingMode: WaitForFirstConsumer

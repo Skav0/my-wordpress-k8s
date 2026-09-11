@@ -4,7 +4,8 @@ kind: Service
 metadata:
   name: wordpress
 spec:
-  type: LoadBalancer # Change to NodePort or ClusterIP if using an Ingress Controller
+  type: LoadBalancer 
+  loadBalancerClass: eks.amazonaws.com/nlb
   ports:
     - port: 80
       targetPort: 80
