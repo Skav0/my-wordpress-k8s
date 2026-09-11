@@ -1,0 +1,5 @@
+resources:
+- mysql.yaml
+- pvc.yaml
+- secret.yaml
+- wordpress.yaml
