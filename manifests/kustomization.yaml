@@ -1,3 +1,4 @@
+#kustomization.yaml
 resources:
 - mysql.yaml
 - pvc.yaml
