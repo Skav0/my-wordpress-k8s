@@ -29,6 +29,10 @@ spec:
         app: wordpress
         tier: frontend
     spec:
+      tolerations:
+      - key: "CriticalAddonsOnly"
+        operator: "Exists"
+        effect: "NoSchedule"
       containers:
         - image: wordpress
           name: wordpress
