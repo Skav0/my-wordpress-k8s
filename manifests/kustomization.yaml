@@ -4,3 +4,4 @@ resources:
 - pvc.yaml
 - secret.yaml
 - wordpress.yaml
+- storageclass.yaml
