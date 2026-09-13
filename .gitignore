@@ -1,0 +1,45 @@
+# Local environment files
+.env
+.env.*
+*.local
+
+# Kubernetes / cloud credentials
+kubeconfig
+kubeconfig.*
+*.pem
+*.key
+*.crt
+*.csr
+
+# Secrets and config values
+secrets/
+secret.*
+values-*.yaml
+!values.example.yaml
+
+# WordPress runtime/generated data
+wp-content/uploads/
+wp-content/cache/
+wp-content/upgrade/
+wp-content/plugins/akismet/
+*.log
+logs/
+
+# OS/editor files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Archives and temporary files
+*.tar
+*.tar.gz
+*.zip
+*.bak
+*.tmp
+
+# Helm/chart artifacts
+*.tgz
+charts/*/charts/
